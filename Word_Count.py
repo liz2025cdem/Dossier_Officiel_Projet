@@ -3,13 +3,15 @@ Un compteur de mot qui est une exercice du cours Activité TEchnologie.
 Par: Zihao Li
 groupe 401
 """
-word_count = input("Entrer une phrase.")
 
-mot = word_count.split()
 
-print(f'la phrase que vous avez taper est {word_count}')
+def count_word(phrase):
+    mot = phrase.split()
+    return len(mot)
 
-chaine = word_count
-mot = (len(mot))
 
-print(f'le nombre de mot entrer est {mot}')
+phrase_entree = input("Entrer une phrase.")
+nombre_de_mots = count_word(phrase_entree)
+
+print(f'La phrase que vous avez taper est {phrase_entree}')
+print(f'Le nombre de mot entrer est {nombre_de_mots}')
