@@ -10,7 +10,7 @@ def count_word(phrase):
     return len(mot)
 
 
-phrase_entree = input("Entrer une phrase.")
+phrase_entree = str(input("Entrer une phrase."))
 nombre_de_mots = count_word(phrase_entree)
 
 print(f'La phrase que vous avez taper est {phrase_entree}')
