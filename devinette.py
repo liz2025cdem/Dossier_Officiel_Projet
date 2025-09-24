@@ -5,31 +5,26 @@ groupe 401
 """
 import random
 
-chiffre_aleatoire = random.randint(1, 1000)
+chiffre_aleatoire = random.randint(1, 100)
+guess=print('cest un jeu que vous devez guess un chiffre aleatoire entre 1-100')
 
-guess = int(input('Entrer votre guess'))
+nb_essai = 1
+while guess != chiffre_aleatoire:
+    guess = int(input('Entrer votre guess, cest entre 1-100'))
+    if guess < chiffre_aleatoire:
+        print('le nombre que vous cherchez est plus grand que votre guess')
+    elif guess > chiffre_aleatoire:
+        print('le nombre que vous cherchez est plus petit que votre guess')
 
-nb_essai = 0
-while chiffre_aleatoire < nb_essai or chiffre_aleatoire > nb_essai:
-    print(nb_essai)
     nb_essai += 1
-    if chiffre_aleatoire == nb_essai:
+    print('continuer à deviner')
+
+
+
+    if guess == chiffre_aleatoire:
+        print(f'vous avez trouver le bon nombre: {chiffre_aleatoire}')
+        print(f'vous avez trouver le bon nombre en: {nb_essai} essai')
         break
-
-if chiffre_aleatoire == nb_essai:
-    print('vous avez raison')
-elif chiffre_aleatoire < nb_essai:
-    print('le guess est trop grand')
-elif chiffre_aleatoire > nb_essai:
-    print('le guess est trop petit')
-
-
-
-
-
-
-
-
 
 
 
