@@ -1,1 +1,21 @@
+def une_partie():
+  point_vie = 20
+  print('Vous avez 20 points de vies au départ')
+
+  random_integer = random.randint(1, 5)
+  print(f"Le niveau de votre adversaire est: niveau {random_integer}")
+  choix = input('Quest ce que vous voulez faire? Tape 1, si vouz voulez combattre avec lui. Tape 2 si vous voulez Contourner cet '
+    'adversaire et aller ouvrir une autre porte. Tape 3 si vous voulez savoir les regles et tape 4 si vous voulez quitter ')
+    if choix == '1':
+      random_integer2 = random.randint(1, 6)
+      print(f"Votre force est {random_integer2} point")
+      if random_integer2 < random_integer:
+         random_integer2 = point_vie - random_integer
+         print(f"Vous avez perdu ce combat, Votre force est {random_integer2} point")
+      if random_integer2 > random_integer:
+         random_integer2 = point_vie + random_integer
+         print(f"Vous avez gagné ce combat, Votre force est {random_integer2} point")
+      if random_integer2 == random_integer:
+        random_integer2 == point_de_vie
+        print(f"personne a gané pendant le combat, Votre force est {random_integer2} point")
 
