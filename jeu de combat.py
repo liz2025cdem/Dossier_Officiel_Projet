@@ -22,7 +22,7 @@ while point_vie_actuel > 0:
     '''Les résultats possible du niveau de adversaire'''
     force_adversaire = random.randint(2, 11)
 
-    '''ajout de un boss apres 3 combats gagner'''
+    '''ajout d'un boss apres 3 combats gagner'''
     if match_gagner > 0 and match_gagner % 3 == 0:
         print('Vous avez atteint une séquence de 3 victoires! Vous faites face à un BOSS plus fort.')
         force_adversaire = random.randint(5, 11)
@@ -60,7 +60,7 @@ while point_vie_actuel > 0:
             victoires_consecutives = 0
 
             print("Dernier combat = DÉFAITE")
-            print(f"point de vie(force du joueur): {point_vie_actuel} points")
+            print(f"point de vie: {point_vie_actuel} points")
 
 
             '''Resultat si egalité'''
@@ -81,7 +81,7 @@ while point_vie_actuel > 0:
 
         '''Le résultat si le joueur choisit option 3'''
     elif choix == '3':
-        choix = print(
+        print(
             'Pour réussir un combat, il faut que la valeur du dé lancé soit supérieure à la force de l’adversaire.'
             'Dans ce cas, le niveau de vie de l’usager est augmenté de la force de l’adversaire.'
             'Une défaite a lieu lorsque la valeur du dé lancé par l’usager est inférieure ou égale à la force de '
