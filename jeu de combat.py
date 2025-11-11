@@ -49,7 +49,7 @@ while point_vie_actuel > 0:
             match_gagner += 1
             victoires_consecutives += 1
 
-            print("Dernier combat = VICTOIRE")
+            print("Dernier combat = victoire")
             print(f"point de vie: {point_vie_actuel} points")
             print(f"Nombre de victoires consécutives: {victoires_consecutives}")
 
@@ -59,7 +59,7 @@ while point_vie_actuel > 0:
             match_perdu += 1
             victoires_consecutives = 0
 
-            print("Dernier combat = DÉFAITE")
+            print("Dernier combat = défaite")
             print(f"point de vie: {point_vie_actuel} points")
 
 
@@ -67,7 +67,7 @@ while point_vie_actuel > 0:
         else:
             victoires_consecutives = 0
 
-            print("Dernier combat = PARTIE NULLE ")
+            print("Dernier combat = partie nulle ")
             print(f"point de vie(force du joueur){point_vie_actuel} points")
 
             '''Le résultat si le joueur choisit l'option 2'''
@@ -94,7 +94,7 @@ while point_vie_actuel > 0:
 
         '''Le résultat si le joueur choisit option 4'''
     elif choix == '4':
-        print('Merci de votre participation. À bientôt!')
+        print('Merci de votre participation. À bientot!')
         break
 
 
