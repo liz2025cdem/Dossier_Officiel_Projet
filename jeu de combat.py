@@ -94,7 +94,7 @@ while point_vie_actuel > 0:
 
         '''Le résultat si le joueur choisit option 4'''
     elif choix == '4':
-        print('Merci de votre participation. À bientot!')
+        print('Merci de votre participation. Au revoir!')
         break
 
 
