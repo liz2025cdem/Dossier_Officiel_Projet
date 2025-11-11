@@ -76,7 +76,7 @@ while point_vie_actuel > 0:
         point_vie_actuel -= 1
         victoires_consecutives = 0
 
-        print(f"Vous avez contourné l'adversaire. Pénalité de **1 point de vie**.")
+        print(f"Vous avez contourné l'adversaire. Pénalité de 1 point de vie**.")
         print(f'Niveau de vie de l’usager: {point_vie_actuel} points.')
 
         '''Le résultat si le joueur choisit option 3'''
